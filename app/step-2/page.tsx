@@ -12,7 +12,7 @@ const audienceData = [
 	{ icon: <FaBuilding size={70} />, employees: "6-10 "},
 	{ icon: <FaBuilding size={70} />, employees: "11-25" },
 	{ icon: <FaBuilding size={70} />, employees: "26-50" },
-	{ icon: <BsFillBuildingsFill size={70} />, employees: 51-150 },
+	{ icon: <BsFillBuildingsFill size={70} />, employees: "51-150" },
 	{ icon: <BsFillBuildingsFill size={70} />, employees: '200+' },
 ];
 

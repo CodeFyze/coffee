@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 export async function POST(req: Request) {
   try {
     const body = await req.json();
-    console.log(body)
+    console.log(body);
     const response = await fetch(process.env.GHL_LINK as string, {
       method: "POST",
       headers: {
@@ -22,6 +22,10 @@ export async function POST(req: Request) {
             value: "4bb9b077-4278-4108-88d0-9d4d6ccac415",
           },
           { id: "JS3jFDAl0NuNgYX1yfa1", value: body.selected },
+          {
+            id: "IVu0hQkW5a94VY1VYPZp",
+            value: body.serveCoffee.join(", "),
+          },
           { id: "6abBmIjfJwpRWaco6tPW", value: body.selectedBusinessType },
           { id: "fGdl7g8tzj3FgjU0FtJ9", value: body.businessName },
           { id: "DCZoXZsaYoN8WksVYATL", value: body.region },

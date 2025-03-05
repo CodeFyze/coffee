@@ -25,6 +25,7 @@ function ReviewContent() {
     region,
     companyName,
     selectedBusinessType,
+    serveCoffee
   } = useOrder();
 
   const [formData, setFormData] = useState({
@@ -108,6 +109,7 @@ function ReviewContent() {
           companyName,
           selectedOptions,
           selectedBusinessType,
+          serveCoffee
         }),
       });
 

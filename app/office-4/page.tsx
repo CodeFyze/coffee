@@ -45,7 +45,7 @@ function CoffeeSelectionComponent() {
 
   useEffect(() => {
     setServeCoffee(selectedOptions);
-  }, [selectedOptions]);
+  }, [selectedOptions, setServeCoffee]);
 
   // setServeCoffee((prev) =>
   //   prev.includes(option)

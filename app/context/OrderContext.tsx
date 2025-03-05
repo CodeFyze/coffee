@@ -5,6 +5,7 @@ interface OrderContextType {
   selected: string | null;
   companyName: string;
   selectedEmployees: number | string | null;
+  selectedBusinessType: string | null;
   region: string;
   selectedCoffee: string | null;
   whatNeed: string[];
@@ -16,6 +17,7 @@ interface OrderContextType {
   additionalInfo: string; // Added additionalInfo field
   wantsSample: boolean; // Added wantsSample field
   setSelected: (value: string | null) => void;
+  setSelectedBusinessType: (value: string | null) => void;
   setWhatNeed: (value: string[]) => void;
   setServeCoffee: (value: string[]) => void;
   setCompanyName: (value: string) => void;
@@ -48,6 +50,9 @@ export const OrderProvider = ({ children }: { children: React.ReactNode }) => {
     kg: 1,
     days: 28,
   });
+  const [selectedBusinessType, setSelectedBusinessType] = useState<
+    string | null
+  >(null);
   const [fullName, setFullName] = useState<string>(""); // Added state for fullName
   const [email, setEmail] = useState<string>(""); // Added state for email
   const [phone, setPhone] = useState<string>(""); // Added state for phone
@@ -55,6 +60,7 @@ export const OrderProvider = ({ children }: { children: React.ReactNode }) => {
   const [wantsSample, setWantsSample] = useState<boolean>(false); // Added state for wantsSample
   const [serveCoffee, setServeCoffee] = useState<string[]>([]);
   const [whatNeed, setWhatNeed] = useState<string[]>([]);
+
 
   return (
     <OrderContext.Provider
@@ -68,6 +74,8 @@ export const OrderProvider = ({ children }: { children: React.ReactNode }) => {
         setServeCoffee,
         setWhatNeed,
         whatNeed,
+        setSelectedBusinessType,
+        selectedBusinessType,
         coffeeQuantity,
         fullName, // Added fullName to context value
         email, // Added email to context value

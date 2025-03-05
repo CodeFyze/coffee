@@ -24,6 +24,7 @@ function ReviewContent() {
     selectedCoffee,
     region,
     companyName,
+    selectedBusinessType,
   } = useOrder();
 
   const [formData, setFormData] = useState({
@@ -106,6 +107,7 @@ function ReviewContent() {
           region,
           companyName,
           selectedOptions,
+          selectedBusinessType,
         }),
       });
 
@@ -114,7 +116,7 @@ function ReviewContent() {
         throw new Error(errorData.message || "Failed to send contact");
       }
 
-      handleNext(); 
+      handleNext();
     } catch (error) {
       console.error("Submission Error:", error);
       alert("An error occurred. Please try again.");

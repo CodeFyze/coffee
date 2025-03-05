@@ -2,10 +2,13 @@
 
 import { FormEvent, useState } from "react";
 import { useOrder } from "../context/OrderContext";
+import { useRouter } from "next/navigation";
 
 export default function ContactForm() {
   // Form state management
   const { selected } = useOrder();
+  const router = useRouter();
+
   const [formData, setFormData] = useState({
     businessName: "",
     townCity: "",
@@ -16,9 +19,11 @@ export default function ContactForm() {
     message: "",
   });
 
-  const [loading, setLoading] = useState<boolean>(false);
+  const handleNext = () => {
+    router.push("/success");
+  };
 
-  console.log("Selected", selected);
+  const [loading, setLoading] = useState<boolean>(false);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>): Promise<void> => {
     e.preventDefault();
@@ -43,7 +48,7 @@ export default function ContactForm() {
         throw new Error(errorData.message || "Failed to send contact");
       }
 
-      alert("Form submitted successfully");
+      handleNext();
       setFormData({
         businessName: "",
         townCity: "",

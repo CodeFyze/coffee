@@ -47,7 +47,7 @@ function Step5Content() {
       <ProgressBar step={3} />
       <IoIosArrowBack
         size={30}
-        className="absolute top-[20%] left-4 sm:top-20 sm:left-6 md:top-20 md:left-8 lg:top-20 lg:left-10 hover:bg-[#a2121c]/20 text-[#BD1521] p-1 rounded-full transition-colors"
+        className="absolute top-[3%] left-4 sm:top-20 sm:left-6 md:top-20 md:left-8 lg:top-20 lg:left-10 hover:bg-[#a2121c]/20 text-[#BD1521] p-1 rounded-full transition-colors"
         onClick={() => router.push("/office-4")}
       />
 

@@ -96,7 +96,7 @@ export default function ContactForm() {
               name="businessName"
               value={formData.businessName}
               onChange={handleChange}
-              className="w-full px-4 py-3 border border-gray-300 rounded-none focus:ring-1 focus:ring-orange-400 focus:border-orange-400 outline-none transition duration-200"
+              className="w-full px-4 py-3 border border-gray-300 rounded-none focus:ring-1 focus:ring-[#BD1521] focus:border-[#BD1521]  outline-none transition duration-200"
             />
           </div>
 
@@ -110,7 +110,7 @@ export default function ContactForm() {
               name="townCity"
               value={formData.townCity}
               onChange={handleChange}
-              className="w-full px-4 py-3 border border-gray-300 rounded-none focus:ring-1 focus:ring-orange-400 focus:border-orange-400 outline-none transition duration-200"
+              className="w-full px-4 py-3 border border-gray-300 rounded-none focus:ring-1 focus:ring-[#BD1521] focus:border-[#BD1521]  outline-none transition duration-200"
             />
           </div>
 
@@ -124,7 +124,7 @@ export default function ContactForm() {
               name="firstName"
               value={formData.firstName}
               onChange={handleChange}
-              className="w-full px-4 py-3 border border-gray-300 rounded-none focus:ring-1 focus:ring-orange-400 focus:border-orange-400 outline-none transition duration-200"
+              className="w-full px-4 py-3 border border-gray-300 rounded-none focus:ring-1 focus:ring-[#BD1521] focus:border-[#BD1521]  outline-none transition duration-200"
             />
           </div>
 
@@ -138,7 +138,7 @@ export default function ContactForm() {
               name="lastName"
               value={formData.lastName}
               onChange={handleChange}
-              className="w-full px-4 py-3 border border-gray-300 rounded-none focus:ring-1 focus:ring-orange-400 focus:border-orange-400 outline-none transition duration-200"
+              className="w-full px-4 py-3 border border-gray-300 rounded-none focus:ring-1 focus:ring-[#BD1521] focus:border-[#BD1521]  outline-none transition duration-200"
             />
           </div>
 
@@ -152,7 +152,7 @@ export default function ContactForm() {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-4 py-3 border border-gray-300 rounded-none focus:ring-1 focus:ring-orange-400 focus:border-orange-400 outline-none transition duration-200"
+              className="w-full px-4 py-3 border border-gray-300 rounded-none focus:ring-1 focus:ring-[#BD1521] focus:border-[#BD1521]  outline-none transition duration-200"
             />
           </div>
 
@@ -166,7 +166,7 @@ export default function ContactForm() {
               name="phone"
               value={formData.phone}
               onChange={handleChange}
-              className="w-full px-4 py-3 border border-gray-300 rounded-none focus:ring-1 focus:ring-orange-400 focus:border-orange-400 outline-none transition duration-200"
+              className="w-full px-4 py-3 border border-gray-300 rounded-none focus:ring-1 focus:ring-[#BD1521] focus:border-[#BD1521] outline-none transition duration-200"
             />
           </div>
         </div>
@@ -181,7 +181,7 @@ export default function ContactForm() {
             value={formData.message}
             onChange={handleChange}
             rows={6}
-            className="w-full px-4 py-3 border border-gray-300 rounded-none focus:ring-1 focus:ring-orange-400 focus:border-orange-400 outline-none transition duration-200 resize-none"
+            className="w-full px-4 py-3 border border-gray-300 rounded-none focus:ring-1 focus:ring-[#BD1521] focus:border-[#BD1521] outline-none transition duration-200 resize-none"
           />
         </div>
 
@@ -189,7 +189,7 @@ export default function ContactForm() {
         <div className="flex justify-center mt-8">
           <button
             type="submit"
-            className="w-full md:w-80 bg-orange-400 text-white py-4 px-8 hover:bg-orange-500 transition duration-200"
+            className="w-full md:w-80 bg-[#BD1521] text-white py-4 px-8 hover:bg-[#925256] transition duration-200"
           >
             {loading ? "Submitting..." : "GET IN TOUCH"}
           </button>

@@ -31,7 +31,7 @@ export default function StepOne() {
       </h2>
 
       {/* Selection Boxes */}
-      <div className="grid md:grid-cols-2 gap-6 max-w-2xl w-full mt-6">
+      <div className="grid md:grid-cols-2 gap-6  p-10 max-w-2xl w-full mt-6">
         <div
           className={`border-2 rounded-2xl p-16 flex flex-col items-center justify-center cursor-pointer transition-all duration-200 shadow-md ${
             selected === "OFFICE BUSINESS"

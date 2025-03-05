@@ -69,7 +69,7 @@ function CoffeeSelectionComponent() {
     <div className="relative min-h-screen bg-white">
       <IoIosArrowBack
         size={30}
-        className="absolute top-[20%] left-4 sm:top-20 sm:left-6 md:top-20 md:left-8 lg:top-20 lg:left-10 hover:bg-red-100 p-1 rounded-full transition-colors"
+        className="absolute top-[3%] left-4 sm:top-20 sm:left-6 md:top-20 md:left-8 lg:top-20 lg:left-10 hover:bg-red-100 p-1 rounded-full transition-colors"
         onClick={() => router.push("/office-3")}
       />
 
